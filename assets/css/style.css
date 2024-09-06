@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #917fb3;
+    background-image: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 5%;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+    margin-left: 42%;
+}
+
+@media(max-width:600px){
+.logo img{
+    margin-left: 35%;
+}
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.home-container {
+    background-color: #ded4f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+/* Style général des messages d'erreur */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style pour les champs de saisie en cas d'erreur */
+.input-error {
+    border: 2px solid rgb(0, 0, 0); /* Bordure rouge pour indiquer une erreur */
+    background-color: #ffe6e6; /* Légère couleur de fond pour indiquer une erreur */
+    color: black;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #917fb3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor:  pointer;
+}
+
+button:hover {
+    background-color: #5a4089;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

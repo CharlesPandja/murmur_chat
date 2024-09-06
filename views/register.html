@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo">
+            <img src="../assets/images/logo_MurMur.png" alt="Logo_Mur" ondragstart="return false;" oncontextmenu="return false">
+            </div>
+        <h2>Inscription</h2>
+        <form action="../controllers/register.php" method="post" id="form">
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" value="paris" name="username" class="error-message" required>
+            <div id="displayErrorName"></div>
+            
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" id="pseudo" value="paris" name="pseudo" class="error-message" required>
+            <div id="displayErrorPseudo"></div>
+            
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" value="parisparis" name="password" class="error-message" required>
+            <div id="displayErrorPassword"></div>
+            
+            <label for="confirm_password">Confirmer le mot de passe:</label>
+            <input type="password" id="confirm_password" value="parisparis" name="confirm_password" class="error-message" required>
+            <div id="displayErrorPassword2"></div>
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p>Déjà inscrit? <a href="../index.html">Se connecter</a></p>
+    </div>
+    <script src="../assets/javascript/ErrorMessage.js"></script>
+</body>
+</html>

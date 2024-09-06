@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo">
+        <img src="./assets/images/logo_MurMur.png" alt="Logo_Mur" ondragstart="return false;" oncontextmenu="return false">
+        </div>
+        <h2>Connexion</h2>
+        <form action="./controllers/login.php" method="post">
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" value="paris" id="pseudo" name="pseudo" required>
+            
+            <label for="password">Mot de passe:</label>
+            <input type="password" value="parisparis" id="password" name="password" required>
+            
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore inscrit? <a href="./views/register.html">Créer un compte</a></p>
+    </div>
+</body>
+</html>
